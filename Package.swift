@@ -15,7 +15,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/IBAnimatable/IBAnimatable.git", .upToNextMajor(from: "6.0.0")),
-        .package(url: "https://github.com/quatreios/QMobileUI.git", .revision("HEAD"))
+        .package(url: "https://github.com/4d-for-ios/QMobileUI.git", .revision("HEAD"))
     ],
     targets: [
         .target(
