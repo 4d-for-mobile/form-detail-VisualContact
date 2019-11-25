@@ -15,13 +15,13 @@ let package = Package(
             targets: ["___PRODUCT___"])
     ],
     dependencies: [
-        .package(url: "https://github.com/IBAnimatable/IBAnimatable.git", .upToNextMajor(from: "6.0.0")),
+        .package(url: "https://github.com/IBAnimatable/IBAnimatable.git", .revision("HEAD")),
         .package(url: "https://github.com/4d-for-ios/QMobileUI.git", .revision("HEAD"))
     ],
     targets: [
         .target(
             name: "___PRODUCT___",
-            dependencies: ["QMobileUI"],
+            dependencies: ["QMobileUI", "IBAnimatable"],
             path: "Sources")
     ]
 )
